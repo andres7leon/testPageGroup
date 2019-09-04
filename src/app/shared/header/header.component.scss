@@ -1,0 +1,19 @@
+.navbar {
+    background-color: #000000;
+    border: 0;
+    border-radius: 0;
+    .active>a {
+        background-color: transparent;
+        color: #fff200;
+    }
+    .nav-one {
+        margin-left: 20rem;
+        li {
+            max-width: 14rem;
+            &:last-child {
+                max-width: 10rem;
+            }
+        }
+    }
+    .cont-search {}
+}
