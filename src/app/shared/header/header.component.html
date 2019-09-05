@@ -1,9 +1,12 @@
 <nav class="row navbar-new">
     <div class="container-fluid">
-        <div class="col-md-3">
+        <div class="col-md-3 col-xs-8">
             <img class="logo" src="./assets/img/logo.png" alt="">
         </div>
-        <div class="col-md-5">
+        <div class="visible-xs col-xs-3 text-right button-menu-resposive" (click)="toggleMenuResposive = !toggleMenuResposive">
+            <i class="material-icons">menu</i>
+        </div>
+        <div class="col-md-5 menu-resposive" [ngClass]="{'visible-menu-resposive ': toggleMenuResposive}">
             <ul class="cont-list-items">
                 <li>Inicio</li>
                 <li>Nuestros Programas</li>
@@ -11,13 +14,13 @@
                 <li>Quiénes Somos</li>
             </ul>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 search-resposive">
             <div class="cont-search-box">
                 <input type="text" placeholder="¿Qué quieres aprender?">
                 <i class="material-icons">search</i>
             </div>
         </div>
-        <div class="col-md-1 cont-list-item-right">
+        <div class="col-md-1 cont-list-item-right hidden-xs">
             <p class="select-language">
                 <span> FAQ</span> <span> ESP</span> <i class="material-icons">keyboard_arrow_down </i>
             </p>
