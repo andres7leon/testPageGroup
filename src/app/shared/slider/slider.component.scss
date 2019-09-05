@@ -1,0 +1,22 @@
+.carousel-control {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    i {
+        font-size: 8rem;
+    }
+}
+
+.carousel-indicators {
+    li {
+        background-color: #9E9E9E;
+        border: 0;
+        margin: 0 1rem;
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    .active {
+        background-color: #ffe124;
+        border: 0;
+    }
+}
