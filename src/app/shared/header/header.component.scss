@@ -4,9 +4,12 @@
     padding: 1rem;
     color: #fff;
     font-family: 'Lato', sans-serif;
-    overflow: hidden;
+    //overflow: hidden;
     width: 100%;
     margin: 0;
+    .logo {
+        cursor: pointer;
+    }
     .container-fluid {
         display: flex;
         justify-content: center;
@@ -29,6 +32,10 @@
             text-align: center;
             &:last-child {
                 width: 10rem;
+            }
+            transition: all 0.4s;
+            &:hover {
+                color: #ffe124;
             }
         }
     }
@@ -61,9 +68,10 @@
     }
     .cont-list-item-right {
         padding: 0;
-        p {
+        .select-language {
             margin: 0;
             font-size: 1.7rem;
+            transition: all 0.4s;
             span {
                 margin: 0 0.5rem;
                 cursor: pointer;
@@ -71,6 +79,40 @@
             i {
                 position: absolute;
                 cursor: pointer;
+            }
+            &:hover~.cont-language {
+                display: block;
+                ;
+            }
+        }
+        .cont-language {
+            display: none;
+            position: absolute;
+            top: 2.3rem;
+            z-index: 2;
+            width: 11rem;
+            background: #585858;
+            text-align: center;
+            height: 9rem;
+            transition: all 0.4s;
+            ul {
+                list-style: none;
+                padding: 0;
+                height: 100%;
+                li {
+                    height: 3rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    transition: all 0.4s;
+                    &:hover {
+                        color: #ffe124;
+                    }
+                }
+            }
+            &:hover {
+                display: block;
             }
         }
     }

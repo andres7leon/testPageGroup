@@ -14,6 +14,10 @@
 .card {
     background-color: #fff;
     font-family: 'Lato', sans-serif;
+    transition: all 0.4s;
+    &:hover {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    }
     .card-header {
         img {
             width: 100%;
@@ -44,6 +48,10 @@
             outline: none;
             font-weight: 700;
             font-size: 1.7rem;
+            transition: all 0.4s;
+            &:hover {
+                background: #ffe124;
+            }
         }
     }
 }
