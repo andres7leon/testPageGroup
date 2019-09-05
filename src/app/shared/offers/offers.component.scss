@@ -1,0 +1,63 @@
+.cont-title-info {
+    margin: 1rem 0 4rem 0;
+    h1 {
+        font-size: 5rem;
+        font-weight: 600;
+        color: #000
+    }
+    h2 {
+        color: #000;
+        margin-top: 0rem;
+    }
+}
+
+.card {
+    background-color: #fff;
+    font-family: 'Lato', sans-serif;
+    .card-header {
+        img {
+            width: 100%;
+        }
+    }
+    .card-body {
+        padding: 3rem;
+        .card-title {
+            border-bottom: 0.3rem solid #ffe124;
+            font-size: 2rem;
+            text-align: center;
+            width: 18rem;
+            margin: 0 auto;
+            text-transform: uppercase;
+            height: 6rem;
+        }
+        .card-text {
+            margin: 2rem 0;
+            font-size: 1.7rem;
+            line-height: 1.5;
+        }
+        button {
+            width: 100%;
+            border: none;
+            border-radius: 0.7rem;
+            height: 4rem;
+            background: #cdcdcd;
+            outline: none;
+            font-weight: 700;
+            font-size: 1.7rem;
+        }
+    }
+}
+
+.col-centered {
+    display: inline-block;
+    float: none;
+    /* reset the text-align */
+    text-align: left;
+    /* inline-block space fix */
+    margin-right: -4px;
+    text-align: center;
+}
+
+.row-centered {
+    text-align: center;
+}
